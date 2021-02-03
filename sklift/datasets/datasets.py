@@ -94,3 +94,22 @@ def clear_data_dir(path=None):
         path = get_data_dir()
     if os.path.isdir(path):
         shutil.rmtree(path, ignore_errors=True)
+
+
+def fetch_criteo (*, data_home=None, subset='train', categories=None,
+                       shuffle=True, random_state=42,
+                       remove=(),
+                       download_if_missing=True, return_X_y=False):
+    """
+
+    :param data_home (str):
+    :param subset:
+    :param categories:
+    :param shuffle:
+    :param random_state:
+    :param remove:
+    :param download_if_missing:
+    :param return_X_y:
+    :return:
+    """
+    pass
